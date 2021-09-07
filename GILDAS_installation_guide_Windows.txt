@@ -1,0 +1,34 @@
+GILDAS package installation guide (Windows os)
+Note: This installation guide is based on the package distribution in July/2021.
+	Please access 'gildas.README' in the download area for more details
+---------------------------------------------------
+1. Go to the GILDAS-IRAM webpage 
+     https://www.iram.fr/IRAMFR/GILDAS/
+2. Download - download area 
+3. Download ‘gildas-win64-mmmyya.exe’.
+4. Run ‘gildas-win64-mmmyya.exe’
+5. Set the destination folder and install the package
+6. run ‘명령 프롬프트’
+7. type the following commend
+    > setx PATH “%PATH%;C:\gildas\bin”
+    (‘C:\gildas’ should be replaced by the installation folder.)
+8. Type the following command to start the CLASS program
+    > class
+
+###### Tip #######
+Followings are the commands you can use in '명령 프롬프트'.
+Linux commends that work the same way are lso listed together. 
+
+------------------------------------------------------------------------------
+Windows		Linux		description
+------------------------------------------------------------------------------
+cd		cd		change directory
+copy		cp		copy files
+erase, del		rm		delete one or more files
+mkdir		mkdir		creat a new directory
+move		mv		move/rename files
+dir		ls		list directory content
+exit		exit		exits the command prompt
+tree		-		show the folder structure
+------------------------------------------------------------------------------
+##############
