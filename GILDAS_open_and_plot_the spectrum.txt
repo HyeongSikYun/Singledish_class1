@@ -1,0 +1,49 @@
+Simple guide to use GILDAS/CLASS
+======================================
+Requirements
+1. the GILDAS package
+2. Radio spectrum data in the class format (spec_data.class).
+======================================
+#1. Open the class file
+    LAS> file in spec_data.class
+    -----------outputs-----------------------------
+    I-CONVERT, file is [Native]
+    I-INPUT, spec_data.class successfully opened
+    ------------------------------------------------
+
+#2. find the spectra
+    LAS> find
+    -----------outputs-----------------------------
+    I-FIND, # observations found
+    ------------------------------------------------
+    Note: # is the number of spectra within the class file.
+
+
+#3. obtain the found spectra one by one.
+    LAS> get first
+    LAS> get next
+    -----------outputs-----------------------------
+    LAS> get first
+    I-GET, Observation 1; "information_for_the_data"
+    LAS> get next
+    I-GET, End of current index encountered
+    ------------------------------------------------
+    Note: "information_for_the_data" is the additional information about the data
+             If the obtained data is the last spectrum within the class file,
+             "get next" did not obtain new spectrum. 
+ 
+#4. Plot the obtained spectrum
+    LAS> pl
+    -----------outputs------------------------------------------------------------
+    The GREG window would present the spectrum over the frequency space
+    -------------------------------------------------------------------------------
+    
+#5. Convert x-axis from frequency to velocity.
+    LAS> set unit v f
+    LAS> pl
+    -----------outputs------------------------------------------------------------
+    The GREG window would present the spectrum over the frequency space
+    -------------------------------------------------------------------------------
+    
+#6. exit CLASS program
+    LAS> exit
