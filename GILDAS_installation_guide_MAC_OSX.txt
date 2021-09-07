@@ -1,0 +1,27 @@
+GILDAS package installation guide (MAC OSX)
+Note: This installation guide is based on the package distribution in July/2021.
+	Please access 'gildas.README' in the download area for more details
+Note: Installation process in MAC OSX is available via 'MacPorts'.
+	Following guidlines describe how to set up 'MacPorts'. 
+---------------------------------------------------
+1. Go to the Xcode webpage 
+     https://developer.apple.com/xcode
+2. Get Xcode with an apple identifier
+3. Install Xcode. 
+    The detailed processes are different depending on the version of OSX.
+    Please access the guidlines in https://www.macports.org/install.php
+4. Go to Xquartz webpage
+    https://www.xquartz.org
+5. Download XQuartz-version.dmg, and open it in macOS's installer
+    Xquartz is successfully installed if the command 'xclock' is available.
+    If not, star Xquartz from Applications > Utilities > XQuartz
+6. Go to MacPorts webpage
+    https://www.macports.org/install.php
+7. Install MacPorts for yout version of the MAC OSX
+    MacPorts is successfully installed when the command "port help" is available
+8. The GILDAS package is available as a standard package in MacPorts. 
+    Type following command.
+    > sudo port install gildas
+
+9. Type the following command to start the CLASS program
+    > class
